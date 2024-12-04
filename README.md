@@ -90,11 +90,15 @@ git clone https://github.com/rmndkyl/hemi-go.git && cd hemi-go
 ```
 
 3. configure wallet/network fees:
-
+```bash
+nano .env
+```
+Format in the `.env` file:
 ```shell
-echo  'EVM_PRIVKEY=your EVM wallet private key' >> . env
-echo  'POPM_BTC_PRIVKEY=your BTC wallet private key' >> . env   #hexadecimal format
-echo  'POPM_STATIC_FEE=2000' >> . env
+POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public
+EVM_PRIVKEY=your EVM wallet private key
+POPM_BTC_PRIVKEY=your BTC wallet private key
+POPM_STATIC_FEE=2000
 ```
 
 ---
