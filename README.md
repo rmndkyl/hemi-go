@@ -89,7 +89,7 @@ sudo apt install -y git make snapd && sudo snap install go --classic
 git clone https://github.com/rmndkyl/hemi-go.git && cd hemi-go
 ```
 
-3. configure wallet/network fees:
+3. create a `.env` and configure wallet/network fees:
 ```bash
 nano .env
 ```
